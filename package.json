@@ -1,0 +1,38 @@
+{
+  "name": "janus-scrreen-sharing-web",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "repository": "hhttps://github.com/random-space/janus-screen-sharing-web",
+  "author": "NozomiSugiyama <rioc.sugiyama@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack -p --config webpack.config.dev.js && cp -Rf ./assets/* ./dist",
+    "dev": "webpack --mode=development --config webpack.config.dev.js && cp -Rf ./assets/* ./dist",
+    "lint": "tslint -p ./ -c ./tslint.json './src/**/*.ts{,x}'"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "v7.0.0-beta.53",
+    "@babel/node": "7.0.0-beta.53",
+    "@babel/preset-env": "v7.0.0-beta.53",
+    "@babel/preset-react": "v7.0.0-beta.53",
+    "@babel/preset-stage-3": "^7.0.0-beta.53",
+    "@babel/preset-typescript": "v7.0.0-beta.53",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-router-dom": "^4.2.6",
+    "babel-loader": "^8.0.0-beta.4",
+    "ts-loader": "^4.4.2",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-loader": "^3.6.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
